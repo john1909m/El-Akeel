@@ -1,0 +1,339 @@
+/* Responsive styles for mobile and tablet devices */
+
+/* Common responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /* Header and navigation */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        position: relative;
+    }
+
+    .title {
+        position: static;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    /* Mobile Nav Toggle */
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .nav-toggle span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+    }
+
+    nav ul.open {
+        max-height: 300px;
+    }
+
+    nav ul li {
+        padding: 10px 15px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* Section 1 - Hero */
+    .s1 .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .s1 img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .main {
+        width: 100%;
+        position: static;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .main h2 {
+        font-size: 36px;
+    }
+
+    .main h3 {
+        font-size: 30px;
+    }
+
+    .main button {
+        margin: 0 auto 20px;
+    }
+
+    /* Section 2 - Features */
+    .specs {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .spec1, .spec2, .spec3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .spec1 img, .spec2 img, .spec3 img {
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    /* Menu section */
+    .menu h3 {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .menubar {
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .menubar ul {
+        width: 100%;
+    }
+
+    .menu button {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .cards {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .foodcard {
+        width: 40%;
+        margin: 10px;
+        float: none;
+    }
+
+    /* Reservation section */
+    .reservation {
+        width: 95%;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 40px;
+    }
+
+    .color {
+        width: 90%;
+        float: none;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .e7gz {
+        margin-top: 20px;
+    }
+
+    .bookinputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Reviews section */
+    .reviews {
+        padding: 20px 0;
+    }
+
+    .cardrev {
+        width: 100%;
+        padding: 20px 0;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card1, .card2, .card3 {
+        float: none;
+        margin: 10px auto;
+        width: 90%;
+        max-width: none;
+    }
+
+    .cirs {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    /* Customer service section */
+    .costumer-service .contact {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .costumer-service .contact .contact-txt {
+        width: 100%;
+        float: none;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .costumer-service .contact button {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    /* Footer */
+    .footdiv {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    footer {
+        float: none;
+        width: 100%;
+    }
+
+    footer .colss {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 10px;
+        margin: 0;
+    }
+
+    .social {
+        float: none;
+        margin: 20px auto;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .social img {
+        margin: 0 10px;
+    }
+}
+
+/* Media queries for mobile phones (480px and below) */
+@media screen and (max-width: 480px) {
+    /* Header and navigation */
+    nav ul li {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    /* Hero section */
+    .main h2 {
+        font-size: 28px;
+    }
+
+    .main h3 {
+        font-size: 24px;
+    }
+
+    .main p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .main button {
+        width: 80%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    /* Menu section */
+    .menubar ul li {
+        display: block;
+        margin: 5px auto;
+        width: 80%;
+    }
+
+    .foodcard {
+        width: 80%;
+    }
+
+    .foodtitle, .foodprice {
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    /* Reservation form */
+    .color {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .e7gz form .formgroup {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .e7gz form .formgroup label {
+        text-align: center;
+    }
+
+    /* Reviews */
+    .card1, .card2, .card3 {
+        padding: 15px;
+        width: 100%;
+    }
+
+    /* Footer */
+    .social h2 {
+        font-size: 24px;
+    }
+
+    footer .col1 ul, footer .col2 ul, footer .col3 ul {
+        padding: 0;
+    }
+}
